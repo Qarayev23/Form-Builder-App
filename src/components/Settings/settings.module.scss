@@ -1,0 +1,60 @@
+@import '../../assets/style/utilities/index.scss';
+
+.settings {
+    max-width: rem(400);
+    width: 100%;
+
+    &__holder {
+        display: flex;
+        flex-direction: column;
+        gap: rem(20);
+    }
+
+    .choice {
+        display: flex;
+        flex-direction: column;
+        gap: rem(12);
+        margin-top: rem(6);
+
+        &__group {
+            display: flex;
+            gap: rem(18);
+        }
+    }
+
+    .removeBtn {
+        &:hover {
+            svg {
+                stroke: #272a31;
+            }
+        }
+
+        svg {
+            stroke: $gray;
+            width: rem(12);
+            height: rem(12);
+        }
+    }
+
+    .addBtn {
+        box-shadow: 0px 1px 2px 0px #1018280D;
+        border: 1px solid #F9FAFB;
+        width: rem(36);
+        height: rem(36);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            svg {
+                stroke: #272a31;
+            }
+        }
+
+        svg {
+            stroke: $gray;
+            width: rem(14);
+            height: rem(14);
+        }
+    }
+}

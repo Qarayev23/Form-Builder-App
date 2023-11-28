@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+
+  *:focus {
+    outline: none;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: $bg-color;
+  line-height: initial;
+  font-family: 'Inter', sans-serif;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+@media screen and (min-width: 1441px) {
+  html {
+    font-size: calc(100vw / 1920 * 20) !important;
+  }
+}
+
+.btn,
+.form-control {
+  box-shadow: none;
+
+  &:focus {
+    text-shadow: none;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+address {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+button {
+  transition: 0.3s;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

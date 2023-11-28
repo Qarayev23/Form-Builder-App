@@ -1,0 +1,10 @@
+@import '../../assets/style/utilities/index.scss';
+
+.editor {
+    flex-grow: 1;
+    min-width: rem(450);
+
+    &__holder {
+        height: 100%;
+    }
+}

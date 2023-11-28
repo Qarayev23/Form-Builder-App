@@ -1,0 +1,124 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: rem(6);
+
+    label {
+        @include font(14, 500);
+        color: $gray-700;
+    }
+
+    .select {
+        position: relative;
+
+        &-icon {
+            position: absolute;
+            right: rem(14);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        option {
+            color: $gray-900;
+        }
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        box-shadow: 0px 1px 2px 0px #1018280D;
+        border: 1px solid #D0D5DD;
+        border-radius: rem(8);
+        padding: rem(12) rem(14);
+        appearance: none;
+        width: 100%;
+        background-color: transparent;
+        font-size: rem(16);
+
+        &::placeholder {
+            color: $gray;
+        }
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        width: rem(20);
+        height: rem(20);
+    }
+
+    .input-group {
+        margin-top: rem(6);
+        display: flex;
+        flex-direction: column;
+        gap: rem(12);
+
+        &__item {
+            display: flex;
+            align-items: center;
+            gap: rem(12);
+
+            label {
+                color: $gray-700;
+            }
+        }
+    }
+}
+
+.form-wrapper {
+    margin-bottom: rem(24);
+    padding: 0 rem(12);
+    position: relative;
+    background-color: white;
+
+    &.drag {
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+        padding-top: rem(16);
+        padding-bottom: rem(16);
+        border-radius: rem(8);
+        height: auto !important;
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &.active {
+        border: 1px dashed #D0D5DD;
+        padding-top: rem(16);
+        padding-bottom: rem(16);
+        border-radius: rem(8);
+
+        .form-wrapper__icons {
+            display: flex;
+        }
+    }
+
+    &__icons {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: rem(-24);
+        flex-direction: column;
+        gap: rem(50);
+        align-items: center;
+
+        .trash-icon {
+            svg {
+                width: rem(16);
+                height: rem(20);
+                stroke: $gray;
+                transition: 0.3s;
+            }
+
+            &:hover {
+                svg {
+                    stroke: rgb(219, 4, 4);
+                }
+            }
+        }
+    }
+}
+
+.container {
+    padding: rem(40);
+}

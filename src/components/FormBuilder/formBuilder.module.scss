@@ -1,0 +1,12 @@
+@import '../../assets/style/utilities/index.scss';
+
+.form__builder {
+    display: flex;
+    gap: rem(20);
+    margin-bottom: rem(40);
+}
+
+.saveBtn {
+    margin-bottom: rem(32);
+    margin-left: auto;
+}

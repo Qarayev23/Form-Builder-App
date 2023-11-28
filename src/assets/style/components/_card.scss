@@ -1,0 +1,35 @@
+.card {
+    border-radius: rem(8);
+    background-color: white;
+    border: 1px solid #EAECF0;
+
+    &__header {
+        padding: rem(16) rem(28);
+        border-bottom: 1px solid #EAECF0;
+    }
+
+    &__caption {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: rem(15);
+    }
+
+    &__body {
+        padding: rem(24) rem(16);
+
+        &--elements {
+            padding: rem(24) rem(16);
+        }
+
+        &--editor {
+            padding-right: rem(44);
+            height: 100%
+        }
+    }
+
+    &__title {
+        @include font(16, 500);
+        color: $gray-900;
+    }
+}

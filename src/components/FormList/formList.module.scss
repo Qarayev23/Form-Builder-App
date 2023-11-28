@@ -1,0 +1,36 @@
+@import '../../assets/style/utilities/index.scss';
+
+.savedForm {
+    display: flex;
+    flex-direction: column;
+    gap: rem(25);
+
+    &__item {
+        display: flex;
+        gap: rem(15);
+        border-bottom: 1px dashed #D0D5DD;
+        padding: rem(5) 0;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+    &__btn {
+        &:hover {
+            svg {
+                stroke: rgb(219, 4, 4);
+                fill: rgb(219, 4, 4);
+            }
+        }
+
+        svg {
+            width: rem(20);
+            height: rem(20);
+            fill: $gray;
+            stroke: $gray;
+            font-size: rem(18);
+            transition: 0.3s;
+        }
+    }
+}

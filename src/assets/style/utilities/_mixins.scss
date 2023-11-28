@@ -1,0 +1,21 @@
+@mixin breakpoint-max($max-width) {
+    $max-width: rem($max-width);
+
+    @media screen and (max-width: #{$max-width}) {
+        @content;
+    }
+}
+
+@mixin breakpoint-min($min-width) {
+    $min-width: rem($min-width);
+
+    @media screen and (min-width: #{$min-width}) {
+        @content;
+    }
+}
+
+@mixin font($value: 16, $weight: 400, $line-height: inherit) {
+    font-size: rem($value);
+    font-weight: $weight;
+    line-height: rem($line-height);
+}

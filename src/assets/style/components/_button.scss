@@ -1,0 +1,31 @@
+.btn {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    @include font(12, 600, 18);
+    color: white;
+    border-radius: rem(4);
+    padding: rem(14) rem(19);
+    text-transform: uppercase;
+
+    &--green {
+        background: $green;
+
+        &:hover {
+            background: darken($green, 10%);
+        }
+
+        &.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+
+    &--gray {
+        background: $gray;
+
+        &:hover {
+            background: darken($gray, 10%);
+        }
+    }
+}

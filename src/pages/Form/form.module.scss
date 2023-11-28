@@ -1,0 +1,18 @@
+@import '../../assets/style/utilities/index.scss';
+
+.form {
+    background: white;
+    border-radius: rem(6);
+    padding: rem(20);
+
+    &__title {
+        font-size: rem(34);
+        text-align: center;
+        margin-bottom: rem(40);
+    }
+
+    &__btn {
+        width: fit-content;
+        margin-top: rem(40);
+    }
+}
