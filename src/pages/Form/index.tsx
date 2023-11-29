@@ -26,7 +26,7 @@ const Form = () => {
     return (
         <div className={styles.form}>
             {
-                form?.elements?.length > 0 ? (
+                form?.elements?.length > 0 && (
                     <>
                         <h1 className={styles.form__title}>{form?.name}</h1>
                         {
@@ -37,8 +37,6 @@ const Form = () => {
                             ))
                         }
                     </>
-                ) : (
-                    <h1 className={styles.form__title}>Form not found</h1>
                 )
             }
 
